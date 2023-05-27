@@ -18,42 +18,41 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
     <section class="component">
       <section class="component-img">
-        <img
-          class="img"
-          src="images/image-equilibrium.jpg"
-          alt="Picture of Equilibrium"
-        />
+        <button class="btn-img"></button>
       </section>
       <section class="component-text">
-        <h1 class="title">Equilibrium #3429</h1>
+        <button class="btn-text">
+          <h1 class="title">Equilibrium #3429</h1>
+        </button>
         <p class="description">
           Our Equilibrium collection promotes balance and calm.
         </p>
 
         <div class="details">
-          <img
-            class="icon details-icon"
-            src="images/icon-ethereum.svg"
-            alt="Ethereum icon"
-          />
-          <p class="details-text">0.041 ETH</p>
-        </div>
+          <div class="ethereum">
+            <img
+              class="icon ethereum-icon"
+              src="images/icon-ethereum.svg"
+              alt="Ethereum icon"
+            />
+            <p class="ethereum-text">0.041 ETH</p>
+          </div>
 
-        <div class="time">
-          <img
-            class="icon time-icon"
-            src="images/icon-clock.svg"
-            alt="Ethereum icon"
-          />
-          <p class="time-text">3 days left</p>
+          <div class="time">
+            <img
+              class="icon time-icon"
+              src="images/icon-clock.svg"
+              alt="Ethereum icon"
+            />
+            <p class="time-text">3 days left</p>
+          </div>
         </div>
 
         <div class="creation">
@@ -62,7 +61,10 @@
             src="images/image-avatar.png"
             alt="Ethereum icon"
           />
-          <p class="creation-text">Creation of Jules Wyvern</p>
+          <p class="creation-text">
+            <span class="creation-color">Creation of</span
+            ><button class="btn-text">&nbsp;Jules Wyvern</button>
+          </p>
         </div>
       </section>
     </section>
@@ -71,7 +73,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/NargesMonzavi">Narges Monzavi</a>.
     </div>
   </body>
 </html>

@@ -1,0 +1,187 @@
+/************************************/
+/* GENERAL */
+/************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px = 1rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Outfit";
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+}
+
+/************************************/
+/* COMPONENT */
+/************************************/
+
+.component {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  margin: 10rem auto;
+  margin-bottom: 2rem;
+
+  box-shadow: 0rem 4rem 2rem 2rem hsl(217, 60%, 9%);
+}
+
+.component-img {
+  margin: 2.5rem auto;
+}
+
+/* BUTTONS from here */
+
+.btn-img,
+.btn-img:hover,
+.btn-img:active {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 1rem;
+  border: none;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.btn-img:hover,
+.btn-img:active {
+  cursor: pointer;
+  background: url(../images/icon-view.svg) center no-repeat,
+    url(../images/image-equilibrium.jpg) center no-repeat;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  background-blend-mode: screen;
+  background-size: 20%, 100%;
+}
+
+.btn-text {
+  font-size: 1.8rem;
+  font-family: "Outfit";
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+.btn-text:hover,
+.btn-text:active {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+/* BUTTONS to here */
+
+.component-text {
+  margin: 2.5rem;
+  margin-top: 0;
+  letter-spacing: 0.13rem;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 2.6rem;
+}
+
+.description {
+  margin-top: 2.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+}
+
+.ethereum,
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ethereum {
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+}
+
+.creation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 0.1rem solid hsl(215, 32%, 27%);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.creation-icon {
+  width: 4rem;
+  border: 0.2rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.creation-color {
+  color: hsl(215, 51%, 70%);
+}
+
+/************************************/
+/* ATTRIBUTION */
+/************************************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/************************************/
+/* QUERIES */
+/************************************/
+
+/************************************/
+/* BELOW 375px (mobile) */
+/************************************/
+
+/* 375px / 16px = 23.5em */
+
+@media (max-width: 23.5rem) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .component {
+    width: 32.5rem;
+    margin: 5rem auto;
+  }
+
+  .btn-img,
+  .btn-img:hover,
+  .btn-img:active {
+    width: 27.5rem;
+    height: 27.5rem;
+  }
+
+  .btn-text {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
